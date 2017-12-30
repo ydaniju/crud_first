@@ -5,5 +5,6 @@ loop do
   user.first_name = "Yusuf"
   user.last_name = "Daniju"
   user.save
+  puts "created"
   break if n == 5
 end
