@@ -22,6 +22,7 @@ Amber::Server.configure do |app|
   end
 
   routes :web do
+    resources "/accounts", AccountsController, only: [:index]
     get "/", HomeController, :index
   end
 end
